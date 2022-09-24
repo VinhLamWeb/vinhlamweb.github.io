@@ -1,0 +1,165 @@
+body{
+    background-image: url(/imgage/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    margin: 0px;
+}
+.container{
+    max-width: 960px;
+    height:0px auto;
+
+}
+#header{
+    background-color: #242424;
+    font-family: sans-serif;
+}
+#wp_content{
+    display: left;
+    min-height: 700px;
+}
+#content{
+    flex-basis: 80%;
+    color:#dfdfdf;
+}
+#sidebar{
+    flex-basis: 20%;
+    color: #dfdfdf;
+    background-color: #dfdfdf;
+    min-height: 200px;
+}
+#footer{
+    background-color: #686767;
+    min-height: 90px;
+    line-height: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#Logo{
+    height: 52px;
+}
+
+#Logo img{
+    width: auto;
+    height: 100%;
+}
+
+#Menu{
+    display:flex;
+    list-style: none;
+    margin: 0px;
+}
+
+#Menu li{
+    position:relative;
+}
+
+#Menu li a{
+    color:rgb(199, 196, 196);
+    display:block;
+    padding: 17px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#Menu li:hover>a{
+    color:#f1f1f1;
+}
+
+#Menu ul.sub-menu1{
+    position:fixed;
+    font-family:Times New Roman;
+    background-color: #242424;
+    padding: 0px;
+    list-style: none;
+    border: 2px solid #313131;
+    display:none;
+}
+
+/* Thực chất không cần phân loại class 123 mà chỉ cần sub-menu 
+ là được nhưng phân ra để về sau có gì tùy chỉnh */
+
+#Menu ul.sub-menu2{
+    position:fixed;
+    font-family:Times New Roman;
+    background-color: #242424;
+    padding: 0px;
+    list-style: none;
+    border: 1px solid #313131;
+    display:none;
+}
+
+#Menu ul.sub-menu3{
+    position:fixed;
+    font-family:Times New Roman;
+    background-color: #242424;
+    padding: 0px;
+    list-style: none;
+    border: 1px solid #313131;
+    display:none;
+}
+
+#Menu li:hover>ul.sub-menu1{
+    display:block;
+}
+
+#Menu li:hover>ul.sub-menu2{
+    display:block;
+}
+
+#Menu li:hover>ul.sub-menu3{
+    display:block;
+}
+
+#Menu ul.sub-menu1 a{
+    padding: 10px 40px 10px 20px;
+    border-bottom: 1px solid #313131;
+}
+
+#Menu ul.sub-menu2 a{
+    padding: 10px 40px 10px 20px;
+    border-bottom: 1px solid #313131;
+}
+
+#Menu ul.sub-menu3 a{
+    padding: 10px 40px 10px 20px;
+    border-bottom: 1px solid #313131;
+}
+
+#Menu ul.sub-menu1 li:hover>a{
+    color:#f1f1f1;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#Menu ul.sub-menu2 li:hover>a{
+    color:#f1f1f1;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#Menu ul.sub-menu3 li:hover>a{
+    color:#f1f1f1;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+/* Segg bottom :) */
+#Menu>li>a{
+    position:relative;
+}
+
+#Menu>li>a::before{
+    content:"";
+    height: 2px;
+    width:0px;
+    background:rgb(236, 234, 234);
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    transition: 0.1s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+#Menu>li:hover>a::before{
+    width:100%;
+}
