@@ -20,6 +20,7 @@ Có ba cách viết các thẻ rỗng:
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Học làm web</title>
     </head>
     <body> 
@@ -32,8 +33,15 @@ Có ba cách viết các thẻ rỗng:
                     <ul id="Menu">
                         <li class="Menu1"><a href="index.html">Trang chủ</a></li>
                         <li><a href="index.html">Giới thiệu</a></li>
-                        <li><a href="index.html">Dự án</a>
+                        <li><a href="index.html">Kho game</a>
                             <ul class="sub-menu1">
+                                <li><a href="">Game PC</a></li>
+                                <li><a href="">Game Android</a></li>
+                                <li><a href="">Game 18+</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">Dự án</a>
+                            <ul class="sub-menu2">
                                 <li><a href="">P.D FK1</a></li>
                                 <li><a href="">P.D FL2</a></li>
                                 <li><a href="">P.D KC2</a></li>
@@ -41,15 +49,15 @@ Có ba cách viết các thẻ rỗng:
                             </ul>
                         </li>
                         <li><a href="index.html">Bài tập</a>
-                            <ul class="sub-menu2">
-                                <li><a href="">Lab 01</a></li>
+                            <ul class="sub-menu3">
+                                <li><a href="Lab1.html">Lab 01</a></li>
                                 <li><a href="">Lab 02</a></li>
                                 <li><a href="">Lab 03</a></li>
                                 <li><a href="">Lab 04</a></li>
                             </ul>
                         </li>
                         <li><a href="index.html">Hướng dẫn</a>
-                            <ul class="sub-menu3">
+                            <ul class="sub-menu4">
                                 <li><a href="">Website</a></li>
                                 <li><a href="">HTML</a></li>
                                 <li><a href="">CSS</a></li>
@@ -57,19 +65,126 @@ Có ba cách viết các thẻ rỗng:
                             </ul>
                         </li>
                     </ul>
+                    <form action="" id="search-box">
+                        <input type="text" id="search-text" placeholder="Tìm kiếm" required>
+                        <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </nav>
             </div>
             <div id="wp_content">
-                <div id="content">
+                <div id="sidebarleft">
                         
                 </div>
-                <div id="sidebar">
-                    <h5>Khóa học</h5>
-                    <ul>
-                        <li><a href="">LOL</a></li>
-                        <li><a href="">LOL</a></li>
-                        <li><a href="">LOL</a></li>
+                <div id="content">
+                    <ul class="products">
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI1.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME ANDROID</a>
+                                    <a href="" class="product-name">Homeless Demon King - Chúa quỷ no way home :)</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI2.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME ANDROID</a>
+                                    <a href="" class="product-name">Grow Stone Online - Game đập đá online</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI3.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME ANDROID</a>
+                                    <a href="" class="product-name">Plants vs. Zombies 2 - Game hoa quả bắn zombies cực hot</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI4.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME PC</a>
+                                    <a href="" class="product-name">Blasphemous - Hành Trình Diệt Thần</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI5.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME PC</a>
+                                    <a href="" class="product-name">There Is No Light - Vùng đất bóng tối</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI6.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME PC</a>
+                                    <a href="" class="product-name">Oxygen Not Included - Xây dựng xã hội chủ nghĩa</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI7.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME PC</a>
+                                    <a href="" class="product-name">Touhou Mystia’s Izakaya - Cũng là Touhou nhưng nó lạ lắm!</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-items">
+                                <div class="product-top">
+                                    <a href="" class="product-img">
+                                        <img src="imgage/PI8.jpg" alt="Vgame">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <a href="" class="product-cat">GAME PC 18+</a>
+                                    <a href="" class="product-name">NekoPara Vol:1 - Nuôi mèo... à mà thôi :))</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
+                </div>
+                <div id="sidebarright">
+                        
                 </div>
             </div>
             <div id="footer">
